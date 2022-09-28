@@ -12,8 +12,18 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 8px;
 }
 
+.left, .footer{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
@@ -29,20 +39,25 @@ body {
   font-style: italic;
 }
 
-button {
+.notifications {
   border: none;
   border-radius: 8px;
   background: rebeccapurple;
   color: white;
   padding: 8px 24px;
+  
 }
 
 a {
   /* this removes the line under our links */
   text-decoration: none;
   color: rebeccapurple;
+  margin: 10px;
 }
 
 ul {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
+  padding-inline-start: 0;
 }
